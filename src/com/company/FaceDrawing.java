@@ -2,11 +2,14 @@ package com.company;
 
 public class FaceDrawing {
 
-    FaceDrawing(String[][] faceFeatures)
+    private String[][]  faceFeatures;
+
+    FaceDrawing(String[][] faceFeatures){
+        this.faceFeatures=faceFeatures;
     }
 
         void edit(String replace, int row, int column){
-
+        facefeatures[][]
         }
 
         void fill(String str){
