@@ -9,7 +9,7 @@ public class FaceDrawing {
     }
 
         void edit(String replace, int row, int column){
-        facefeatures[][]
+        faceFeatures[row][column] = replace;
         }
 
         void fill(String str){
