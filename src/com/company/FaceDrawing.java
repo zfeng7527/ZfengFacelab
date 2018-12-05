@@ -13,8 +13,9 @@ public class FaceDrawing {
         }
 
         void fill(String str){
-        String[0][1] = str;
+            faceFeatures[0][0] = str;
+            faceFeatures[0][7] = str;
+            faceFeatures[4][0] = str;
+            faceFeatures[4][7] = str;
         }
-
-        String toString();
 }
