@@ -9,7 +9,16 @@ public class FaceDrawing {
     }
 
         void edit(String replace, int row, int column){
-        faceFeatures[row][column] = replace;
+
+        for(int i = 0; i < faceFeatures.length; i++){
+            for(int j = 0; j < faceFeatures[i].length; j++) {
+                faceFeatures[row][column] = replace;
+                if(j < 3){
+                    System.out.print(faceFeatures[i][j]);
+                }
+                else System.out.println(faceFeatures[i][j]);
+            }
+        }
         }
 
         void fill(String str){
