@@ -9,22 +9,25 @@ public class FaceDrawing {
     }
 
         void edit(String replace, int row, int column){
+            faceFeatures[row][column] = replace;
+        }
 
-        for(int i = 0; i < faceFeatures.length; i++){
-            for(int j = 0; j < faceFeatures[i].length; j++) {
-                faceFeatures[row][column] = replace;
-                if(j < 3){
-                    System.out.print(faceFeatures[i][j]);
+        void fill(String str) {
+            for (int i = 0; i < faceFeatures.length; i++) {
+                for (int j = 0; j < faceFeatures[i].length; j++) {
+                    faceFeatures[i][j] = str;
                 }
-                else System.out.println(faceFeatures[i][j]);
             }
         }
-        }
+        public String toString(){
+             String face1 = "";
+                for (int i = 0; i < faceFeatures.length; i++) {
+                    for (int j = 0; j < faceFeatures[i].length; j++) {
+                        face1 += faceFeatures[i][j];
 
-        void fill(String str){
-            faceFeatures[0][0] = str;
-            faceFeatures[0][7] = str;
-            faceFeatures[4][0] = str;
-            faceFeatures[4][7] = str;
-        }
+                }
+                face1 += "\n";
+            }
+            return face1;
+            }
 }
